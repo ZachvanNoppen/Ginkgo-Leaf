@@ -1,0 +1,21 @@
+----------------
+These are the sql commands I set up the DB with.
+For doc purposes
+----------------
+
+create type art_type as ENUM('audio','video','visual','text');
+
+CREATE TABLE gallery(
+  id SERIAL PRIMARY KEY,
+  title VARCHAR(200),
+  author VARCHAR(200),
+  location VARCHAR(200),
+  description TEXT,
+  type art_type
+);
+
+------------
+test
+insert into gallery(title, author, location, description, type)
+values('Test','Zach van Noppen', 'media/gallery/test.png', 'This is a test','visual');
+------------
