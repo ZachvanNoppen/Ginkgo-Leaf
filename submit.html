@@ -1,0 +1,37 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Cousine|Merienda&display=swap" rel="stylesheet">
+
+    <title>Landing</title>
+  </head>
+  <body class="">
+    <div class="navbar transparent navbar-inverse navbar-fixed-top">
+        <nav class=" w-100 navbar-inner d-flex flex-row justify-content-around w-75">
+          <div class="d-flex flex-column justify-content-center"><a class="nav-text" href="contributors.html">Contribututors</a></div>
+          <div class="d-flex "><img class="img-fluid nav-logo" src="media\images\logo-no-text.png" ></div>
+          <div class="d-flex flex-column justify-content-center "><a class="nav-text" href="submit_work.html">Submit Work</a></div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <form action="mailer.php" method="post">
+            <p><input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="address"><br>
+            <p><input type="text" class="form-control" name="name" placeholder="Name"><br>
+            <p><input type="textarea" class="form-control" name="message" placeholder="Message">
+            <p><input type="file" accept="file_extension|audio/*|video/*|image/*|media_type"><br>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+  </div>
+
+
+
+    </body>
+  </html>
