@@ -1,0 +1,154 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*
+COLOUR PALLETE
+
+Yellow - #dbe19b
+Green - #a8c970
+Blue - #b7d2c1
+
+font-family: 'Merienda', cursive;
+font-family: 'Cousine', monospace;
+*/
+/*
+  NAVIGATION
+
+
+	Check this out for pure CSS to solve the nav issue
+	https://stackoverflow.com/questions/14431411/pure-css-to-make-font-size-responsive-based-on-dynamic-amount-of-characters
+
+*/
+
+a.nav-text{
+  color: black;
+  font-family: 'Merienda', cursive;
+  font-family: 'Cousine', monospace;
+  text-decoration: none;
+  font-size: 1.5rem;
+
+}
+.nav-logo{
+  height: 75px;
+  width:75px;
+}
+
+/*
+
+BDOY
+
+*/
+
+.desc p{
+  font-family: Calibri, Arial;
+  padding: 10px 0 0 40px;
+}
+.desc h1{
+  font-family: 'Cousine', monospace;
+  padding-top: 100px;
+  font-size: 2rem;
+}
+
+.module-container{
+  margin: 0 0;
+}
+.page-modules{
+  background-color:  #dbe19b;
+	height: 400px;
+}
+.page-modules2{
+  background-color: #a8c970;
+	height: 400px;
+}
+.page-modules3{
+  background-color: #b7d2c1;
+	height: 400px;
+}
+.btn-contrib{
+	border: none;
+	font-family: 'Cousine', monospace;
+	font-size: 1.5rem;
+	border-color: rgba(0,0,0,0) !important;
+}
+.btn-contrib:active{
+  color: white;
+  background-color: rgba(0,0,0,0) !important;
+}
+.btn-contrib:hover{
+  color: white;
+  background-color: rgba(0,0,0,0);
+	transition: all .2s ease-in-out;
+	transform: scale(1.5);
+}
+.btn-contrib:visited{
+  background-color: rgba(0,0,0,0) !important;
+	border-style: 0;
+}
+
+
+
+/*------------
+FOOTER
+-------------*/
+footer{
+	font-family: 'Cousine', monospace;
+	background-color: grey;
+	color: white;
+
+}
+footer a{
+	color: white;
+}
+footer a:hover, a:active{
+	color: rgba(0,0,0,0.5);;
+	text-decoration: none;
+
+}
+footer p{
+	font-size:1rem;
+}
