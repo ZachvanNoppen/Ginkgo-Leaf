@@ -21,6 +21,6 @@ if (!pg_query($conn,$sql)) {
 
 */
 
-header("Location: submit.html");
+header("Location: index.html");
 exit;
 ?>
