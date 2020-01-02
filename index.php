@@ -2,7 +2,7 @@
 //Connecting to the main DB
 
 $conn = pg_connect(getenv("DATABASE_URL"));
-
+$result = "";
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
     echo 'Initial Connect Failed';
@@ -18,6 +18,7 @@ if (!pg_query($conn,$sql)) {
 
 } else {
     $debug = "Record updated successfully";
+    $result = pg_query($conn,$sql);
 }
 
 ?>
