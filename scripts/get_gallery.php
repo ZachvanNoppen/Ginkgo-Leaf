@@ -13,12 +13,26 @@ $name =$_POST["name"];
 $sql = "SELECT title FROM gallery WHERE type = 'visual'";
 
 $debug = "";
-if (!pg_query($conn,$sql)) {
+$result = pg_query($conn,$sql);
+$data = array();
+if (!$result) {
   $debug =  "Error getting record: ";
 
 } else {
-    $debug = "Record updated successfully";
-    $result = pg_query($conn,$sql);
+    $debug = "Queried successfully";
+    //Check if there is any
+    if ($line = pg_fetch_assoc($result)) {
+        if ($line['rows'] == 0) {
+         $debug +=  " -- 0 records";
+        }
+    }
+    else {
+      while ($row = pg_fetch_array($result)) {
+          array_push($data, $row);
+      }
+    }
 }
+
+
 
 ?>
