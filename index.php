@@ -45,7 +45,9 @@ include 'scripts/get_gallery.php';
 
    <div class = "row module-container">
      <!-- Do some JS  -->
-     <p><?php foreach($data as $value){ echo $result['title'];} ?>
+     <p>1.0.1<br>
+       <?php foreach($data as $value){ echo $result['title'];} ?>
+     </p>
    </div>
   </body>
 
