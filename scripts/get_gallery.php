@@ -27,8 +27,9 @@ if (!$result) {
         }
     }
     else {
-      while ($row = pg_fetch_array($result)) {
-          array_push($data, $row);
+      while ($row = pg_fetch_array($result, NULL, PGSQL_BOTH)) {
+          array_push($data, "{$row} <br>");
+          //echo $row[]
       }
     }
 }
